@@ -2,14 +2,14 @@
 
 @section('contents')
 
+<div class="pt-3">
 
-<h1>{{ $comic->title }}</h1>
-<p>{{ $comic->description }}</p>
 <img src="{{ $comic->thumb }}" alt="">
-<p>{{ $comic->price }}</p>
-<h4>{{ $comic->series }}</h4>
-<h4>{{ $comic->sale_date }}</h4>
-<h4>{{ $comic->type }}</h4>
+<h1 class="pt-5">{{ $comic->title }}</h1>
+<p>{{ $comic->description }}</p>
+<h5>Price : {{ $comic->price }}</h5>
+<h5>Series : {{ $comic->series }}</h5>
+<h5>Type : {{ $comic->type }}</h5>
+<h5>Sale Date : {{ $comic->sale_date }}</h5>
 
-
-@endsection
+ @endsection

@@ -5,6 +5,8 @@
 
 <h1 class="text-center text-danger p-3">Comics :</h1>
 
+<a class="btn btn-primary" href="{{ route("comics.create") }}">New</a>
+
 <table class="table">
     <thead>
       <tr>
