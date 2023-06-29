@@ -17,7 +17,7 @@ class ComicController extends Controller
     {
         $comics = Comic::all();
         return view("comics.index", compact("comics"));
-    }
+    } 
 
     /**
      * Show the form for creating a new resource.
@@ -46,9 +46,10 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
-        //
+
+        return view("comics.show", compact("comic"));
     }
 
     /**
