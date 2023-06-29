@@ -9,34 +9,34 @@ return [
         "series" => "Action Comics",
         "sale_date" => "2018-10-02",
         "type" => "comic book",
-        // "artists" => [
-        //     "José Luis García-López",
-        //     "Clay Mann",
-        //     "Rafael Albuquerque",
-        //     "Patrick Gleason",
-        //     "Dan Jurgens",
-        //     "Joe Shuster",
-        //     "Neal Adams",
-        //     "Curt Swan",
-        //     "John Cassaday",
-        //     "Olivier Coipel",
-        //     "Jim Lee"
-        // ],
-        // "writers" => [
-        //     "Brad Meltzer",
-        //     "Tom King",
-        //     "Scott Snyder",
-        //     "Geoff Johns",
-        //     "Brian Michael Bendis",
-        //     "Paul Dini",
-        //     "Louise Simonson",
-        //     "Richard Donner",
-        //     "Marv Wolfman",
-        //     "Peter J. Tomasi",
-        //     "Dan Jurgens",
-        //     "Jerry Siegel",
-        //     "Paul Levitz"
-        // ],
+        "artists" => [
+            "José Luis García-López",
+            "Clay Mann",
+            "Rafael Albuquerque",
+            "Patrick Gleason",
+            "Dan Jurgens",
+            "Joe Shuster",
+            "Neal Adams",
+            "Curt Swan",
+            "John Cassaday",
+            "Olivier Coipel",
+            "Jim Lee"
+        ],
+        "writers" => [
+            "Brad Meltzer",
+            "Tom King",
+            "Scott Snyder",
+            "Geoff Johns",
+            "Brian Michael Bendis",
+            "Paul Dini",
+            "Louise Simonson",
+            "Richard Donner",
+            "Marv Wolfman",
+            "Peter J. Tomasi",
+            "Dan Jurgens",
+            "Jerry Siegel",
+            "Paul Levitz"
+        ],
     ],
     [
         "title" => "American Vampire 1976 #1",
@@ -49,9 +49,9 @@ return [
         "artists" => [
             "Rafael Albuquerque"
         ],
-        // "writers" => [
-        //     "Scott Snyder"
-        // ],
+        "writers" => [
+            "Scott Snyder"
+        ],
     ],
     [
         "title" => "Aquaman Vol. 4: Underworld",
@@ -64,9 +64,9 @@ return [
         "artists" => [
             "Stjepan Sejic"
         ],
-        // "writers" => [
-        //     "Dan Abnett"
-        // ],
+        "writers" => [
+            "Dan Abnett"
+        ],
     ],
     [
         "title" => "Batgirl #1",
@@ -79,9 +79,9 @@ return [
         "artists" => [
             "Rafael Albuquerque"
         ],
-        // "writers" => [
-        //     "Hope Larson"
-        // ],
+        "writers" => [
+            "Hope Larson"
+        ],
     ],
     [
         "title" => "Batman #56",
@@ -94,9 +94,9 @@ return [
         "artists" => [
             "Tony S. Daniel"
         ],
-        // "writers" => [
-        //     "Tom King"
-        // ],
+        "writers" => [
+            "Tom King"
+        ],
     ],
     [
         "title" => "Batman Beyond #1",
@@ -109,9 +109,9 @@ return [
         "artists" => [
             "Bernard Chang"
         ],
-        // "writers" => [
-        //     "Dan Jurgens"
-        // ],
+        "writers" => [
+            "Dan Jurgens"
+        ],
     ],
     [
         "title" => "Batman/Superman #1",
@@ -124,9 +124,9 @@ return [
         "artists" => [
             "David Marquez"
         ],
-        // "writers" => [
-        //     "Joshua Williamson"
-        // ],
+        "writers" => [
+            "Joshua Williamson"
+        ],
     ],
     [
         "title" => "Batman/Superman Annual #1",
@@ -141,9 +141,9 @@ return [
             "Gleb Melnikov",
             "Dale Eaglesham"
         ],
-        // "writers" => [
-        //     "Joshua Williamson"
-        // ],
+        "writers" => [
+            "Joshua Williamson"
+        ],
     ],
     [
         "title" => "Batman: The Joker War Zone #1",
@@ -160,11 +160,11 @@ return [
             "James Stokoe",
             "Darko Lafuente"
         ],
-        // "writers" => [
-        //     "Sam Johns",
-        //     "Joshua Williamson",
-        //     "John Ridley"
-        // ],
+        "writers" => [
+            "Sam Johns",
+            "Joshua Williamson",
+            "John Ridley"
+        ],
     ],
     [
         "title" => "Batman: Three Jokers #1",
@@ -177,9 +177,9 @@ return [
         "artists" => [
             "Jason Fabok"
         ],
-        // "writers" => [
-        //     "Geoff Johns"
-        // ],
+        "writers" => [
+            "Geoff Johns"
+        ],
     ],
     [
         "title" => "Batman: White Knight Presents: Harley Quinn #1",
@@ -192,9 +192,9 @@ return [
         "artists" => [
             "Matteo Scalera"
         ],
-        // "writers" => [
-        //     "Katana Collins"
-        // ],
+        "writers" => [
+            "Katana Collins"
+        ],
     ],
     [
         "title" => "Catwoman Vol. 1: Copycats",
@@ -208,8 +208,8 @@ return [
             "Fernando Blanco",
             "Joëlle Jones"
         ],
-        // "writers" => [
-        //     "Joëlle Jones"
-        // ],
+        "writers" => [
+            "Joëlle Jones"
+        ],
     ],
 ];

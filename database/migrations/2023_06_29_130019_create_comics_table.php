@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string("series", 20);
             $table->string("sale_date", 20);
             $table->string("type", 20);
+            $table->json_encode($comic["artists"]);
+            $table->json_encode($comic["writers"]);
 
             $table->timestamps();
         });
