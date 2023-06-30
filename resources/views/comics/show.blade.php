@@ -12,6 +12,8 @@
 <h5>Type : {{ $comic->type }}</h5>
 <h5>Sale Date : {{ $comic->sale_date }}</h5>
 
-
+<button class="btn btn-primary my-4">
+    <a class="text-light text-decoration-none" href="http://127.0.0.1:8000/comics">Back to catalogue</a>
+</button>
 
  @endsection
