@@ -5,9 +5,9 @@
 
 <h1 class="text-center text-danger p-3">Comics :</h1>
 
-<a class="btn btn-primary" href="{{ route("comics.create") }}">New</a>
+<a class="btn btn-primary my-3" href="{{ route("comics.create") }}">New</a>
 
-<table class="table">
+<table class="table table-dark">
     <thead>
       <tr>
         <th scope="col">Title</th>
@@ -33,5 +33,9 @@
         @endforeach
     </tbody>
   </table>
+
+  <button class="btn btn-primary my-4">
+    <a class="text-light text-decoration-none" href="http://127.0.0.1:8000">Back to Home</a>
+</button>
 
   @endsection

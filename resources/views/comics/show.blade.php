@@ -12,4 +12,6 @@
 <h5>Type : {{ $comic->type }}</h5>
 <h5>Sale Date : {{ $comic->sale_date }}</h5>
 
+
+
  @endsection
