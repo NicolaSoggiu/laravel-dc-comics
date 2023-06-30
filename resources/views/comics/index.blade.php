@@ -35,7 +35,7 @@
   </table>
 
   <button class="btn btn-primary my-4">
-    <a class="text-light text-decoration-none" href="http://127.0.0.1:8000">Back to Home</a>
+    <a class="text-light text-decoration-none" href="{{ route("home")}}">Back to Home</a>
 </button>
 
   @endsection
