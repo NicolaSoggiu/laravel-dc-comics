@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string("type", 20);
             $table->string("sale_date", 20);
 
+            $table->softDeletes();
             $table->timestamps();
         });
     }
