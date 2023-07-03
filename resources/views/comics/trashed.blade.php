@@ -5,6 +5,7 @@
 
 <h1 class="text-center text-danger p-3">Comics deleted :</h1>
 
+{{-- @dd($trashedComics); --}}
 @if (session("delete_success"))
   @php $comic = session("delete_success") @endphp
   <div class="alert alert-danger">

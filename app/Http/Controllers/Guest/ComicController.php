@@ -156,8 +156,7 @@ class ComicController extends Controller
 
     public function trashed() 
     {
-        $trashedComics = Comic::onlyTrashed();
-
+        $trashedComics = Comic::onlyTrashed()->paginate(5);
         return view("comics.trashed", compact("trashedComics"));
     }
 
