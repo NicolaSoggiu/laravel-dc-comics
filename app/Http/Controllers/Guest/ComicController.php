@@ -8,6 +8,18 @@ use App\Http\Controllers\Controller;
 
 class ComicController extends Controller
 {
+
+    private $validations = [
+        "thumb"         => "required|string",
+        "title"         => "required|string|max:50",
+        "description"   => "required|string",
+        "price"         => "required|string|max:10",
+        "series"        => "required|string|max:50",
+        "type"          => "required|string|max:20",
+        "sale_date"     => "required|string|max:20",
+    ];
+
+
     /**
      * Display a listing of the resource.
      *
@@ -16,8 +28,13 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::all();
-        return view("comics.index", compact("comics"));
-    } 
+        // return view("comics.index", compact("comics"));
+
+        // alternativa
+            return view("comics.index", [
+                "comics" => $comics,
+            ]);
+     } 
 
     /**
      * Show the form for creating a new resource.
@@ -38,16 +55,7 @@ class ComicController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
-            "thumb"         => "required|string",
-            "title"         => "required|string|max:50",
-            "description"   => "required|string",
-            "price"         => "required|string|max:10",
-            "series"        => "required|string|max:50",
-            "type"          => "required|string|max:20",
-            "sale_date"     => "required|string|max:20",
-    
-            ]);
+        $request->validate($this->validations);
         
         $data = $request->all();
 
@@ -87,9 +95,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
-        //
+        return view("comics.edit", compact("comic"));
     }
 
     /**
@@ -99,9 +107,26 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+
+        // validare i dati
+        $request->validate($this->validations);
+
+        $data = $request->all();
+
+        // aggiornare i dati nel db
+        $comic->thumb           = $data["thumb"];
+        $comic->title           = $data["title"];
+        $comic->description     = $data["description"];
+        $comic->price           = $data["price"];
+        $comic->series          = $data["series"];
+        $comic->type            = $data["type"];
+        $comic->sale_date       = $data["sale_date"];
+        $comic->update();
+
+        // altro metodo per fare il redirect
+        return to_route("comics.show", ["comic" => $comic->id]);
     }
 
     /**
@@ -110,8 +135,8 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Comic $comic)
     {
-        //
     }
+
 }

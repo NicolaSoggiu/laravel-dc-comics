@@ -5,6 +5,7 @@
 
 <h1 class="text-center text-danger p-3">Comics :</h1>
 
+
 <a class="btn btn-primary my-3" href="{{ route("comics.create") }}">New</a>
 
 <table class="table table-dark">
@@ -26,8 +27,8 @@
             <td>{{ $comic->sale_date }}</td>
             <td>
                 <a class="btn btn-primary" href="{{ route("comics.show", ["comic" => $comic->id]) }}">View</a>
-                <a class="btn btn-warning" href="">Edit</a>
-                <a class="btn btn-danger" href="">Delete</a>
+                <a class="btn btn-warning" href="{{ route("comics.edit", ["comic" => $comic->id]) }}">Edit</a>
+                  <button class="btn btn-danger">Delete</button>
             </td>
           </tr>
         @endforeach
